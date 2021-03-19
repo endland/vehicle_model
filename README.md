@@ -25,7 +25,13 @@ sourc install/setup.bash
 ```
 lgsvl_bridge [--port 9090] [--log D]
 ./simulator
-ros2 launch vehicle_model vehicle_visualization.launch.py
+ros2 launch vehicle_model vehicle_visualization.launch.py  
+
+```
+
+# You need to run the below command to view camera image at Rviz2
+```
+ros2 run image_transport republish compressed --ros-args --remap in/compressed:=/simulator/sensor/camera/center/compressed --remap out:=/image_raw
 
 ```
 
