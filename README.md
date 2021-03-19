@@ -29,7 +29,7 @@ ros2 launch vehicle_model vehicle_visualization.launch.py
 
 ```
 
-# You need to run the below command to view camera image at Rviz2
+You need to run the below command to view camera image at Rviz2
 ```
 ros2 run image_transport republish compressed --ros-args --remap in/compressed:=/simulator/sensor/camera/center/compressed --remap out:=/image_raw
 
